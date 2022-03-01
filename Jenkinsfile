@@ -1,6 +1,6 @@
 pipeline {
-  agent any
-  stages {label 'nodo_Roldan'}
+  agent {label 'nodo_Roldan'}
+  stages {
     stage('Build') {
       steps {
         echo "Do something"
