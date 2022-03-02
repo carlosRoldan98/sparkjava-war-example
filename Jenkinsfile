@@ -4,7 +4,9 @@ pipeline {
     stage('Build') {
       steps {
         sh '''
+        ls
         echo "Do something"
+        '''
       }
     }
     stage('Test') {
@@ -15,7 +17,6 @@ pipeline {
     stage('Deploy') {
       steps {
         echo "Do something"
-        '''
       }
     }
   }
