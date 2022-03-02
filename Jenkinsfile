@@ -4,8 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         sh '''
-        ls
-        echo "Do something"
+        echo 'Inicia Build'
+        mvn clean install
         '''
       }
     }
